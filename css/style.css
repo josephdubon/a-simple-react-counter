@@ -147,3 +147,8 @@ table {
 button {
   margin: 0.5rem;
 }
+
+.aboveTen {
+  color: red;
+  font-weight: bold;
+}

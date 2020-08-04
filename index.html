@@ -33,16 +33,22 @@
           }
         }
 
+        // Increment
         handleIncrement = (event) => {
-          this.setState((state, props) => ({
-            count: state.count + 1,
-          }))
+          this.setState((state, props) => {
+            if (state.count < 20) {
+              return { count: state.count + 1 }
+            }
+          })
         }
 
+        // Decrement
         handleDecrement = (event) => {
-          this.setState((state, props) => ({
-            count: state.count - 1,
-          }))
+          this.setState((state, props) => {
+            if (state.count > 0) {
+              return { count: state.count - 1 }
+            }
+          })
         }
 
         // Keep render as the last method on the list, for readbility and findability
@@ -50,7 +56,9 @@
           return (
             <div>
               <button onClick={this.handleDecrement}>decrement (-)</button>
-              {this.state.count}
+              {}
+              <span>{this.state.count}</span>
+              
               <button onClick={this.handleIncrement}>increment (+)</button>
             </div>
           )
