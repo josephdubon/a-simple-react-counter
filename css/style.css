@@ -6,7 +6,7 @@ v1.001 | 20200615
 
 /* Reset Box-Sizing */
 :root {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -90,12 +90,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    /* font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%;
     font: inherit; */
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -110,40 +110,40 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 button {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
