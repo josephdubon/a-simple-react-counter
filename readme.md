@@ -4,7 +4,7 @@ Short project descrption.
 
 ## GitLab Pages URL
 
-https://josephdubon.gitlab.io/
+https://josephdubon.gitlab.io/a-simple-react-counter
 
 ### Assessment Development Plan
 
