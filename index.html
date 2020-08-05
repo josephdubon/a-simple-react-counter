@@ -6,9 +6,11 @@
     <title>React Counter</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- Empy element for render -->
     <div id="root"></div>
+
     <!-- Load React development version -->
     <script
       crossorigin
@@ -18,14 +20,17 @@
       crossorigin
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
     ></script>
+
     <!-- Load Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <script type="text/babel">
       class Counter extends React.Component {
         constructor(props) {
           super(props)
+
           this.state = {
-            count: 0,
+            count: props.initialCount || 0,
           }
         }
         // Increment
