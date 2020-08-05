@@ -6,11 +6,9 @@
     <title>React Counter</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <!-- Empy element for render -->
     <div id="root"></div>
-
     <!-- Load React development version -->
     <script
       crossorigin
@@ -27,12 +25,10 @@
       class Counter extends React.Component {
         constructor(props) {
           super(props)
-
           this.state = {
             count: 0,
           }
         }
-
         // Increment
         handleIncrement = (event) => {
           this.setState((state, props) => {
@@ -43,7 +39,6 @@
             }
           })
         }
-
         // Decrement
         handleDecrement = (event) => {
           this.setState((state, props) => {
@@ -52,7 +47,6 @@
             }
           })
         }
-
         // Reset to 0
         resetCounter = (event) => {
           this.setState((state, props) => {
@@ -97,7 +91,6 @@
           }
         }
       }
-
       ReactDOM.render(<Counter />, document.getElementById('root'))
     </script>
 
