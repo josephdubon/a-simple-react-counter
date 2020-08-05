@@ -30,7 +30,7 @@
           super(props)
 
           this.state = {
-            count: props.initialCount || 0,
+            count: this.props.initialCount || 0,
           }
         }
         // Increment
@@ -95,7 +95,7 @@
           }
         }
       }
-      ReactDOM.render(<Counter />, document.getElementById('root'))
+      ReactDOM.render(<Counter initialCount='5' />, document.getElementById('root'))
     </script>
     <script src="src/scriptName.js"></script>
   </body>
