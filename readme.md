@@ -1,4 +1,4 @@
-## React A Simple Counter
+# React A Simple Counter
 
 Assignment
 
@@ -8,7 +8,7 @@ Assignment
 
 ## GitLab Pages URL
 
-https://josephdubon.gitlab.io/a-simple-react-counter
+<https://josephdubon.gitlab.io/a-simple-react-counter>
 
 ### Assessment Development Plan / From Video Lesson
 

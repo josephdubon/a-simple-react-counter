@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React Counter</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!-- Empy element for render -->
-    <div id="root"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Counter</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- Load React development version -->
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
+<body>
+  <!-- Empy element for render -->
+  <div id="root"></div>
 
-    <!-- Load Babel -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Load React development version -->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-    <script type="text/babel">
-      class Counter extends React.Component {
+  <!-- Load Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    class Counter extends React.Component {
         constructor(props) {
           super(props)
 
@@ -40,10 +35,11 @@
             if (state.count < 20) {
               return { count: state.count + 1 }
             } else if (state.count > 9) {
-              ;<span className="aboveTen">{this.state.count}</span>
+              <span className="aboveTen">{this.state.count}</span>
             }
           })
         }
+
         // Decrement
         handleDecrement = (event) => {
           this.setState((state, props) => {
@@ -65,37 +61,37 @@
           // If count is at 0
           if (this.state.count === 0) {
             return (
-              <div>
+              <React.Fragment>
                 <button onClick={this.handleDecrement}>decrement (-)</button>
                 <span>{this.state.count}</span>
                 <button onClick={this.handleIncrement}>increment (+)</button>
-              </div>
+              </React.Fragment>
             )
           }
 
           // If count is more than 9
           if (this.state.count > 9) {
             return (
-              <div>
+              <React.Fragment>
                 <button onClick={this.handleDecrement}>decrement (-)</button>
                 <span className="aboveTen">{this.state.count}</span>
                 <button onClick={this.handleIncrement}>increment (+)</button>
                 <br />
                 <button onClick={this.resetCounter}>reset to (0)</button>
-              </div>
+              </React.Fragment>
             )
           }
 
           // If count is more than 0
           if (this.state.count > 0) {
             return (
-              <div>
+              <React.Fragment>
                 <button onClick={this.handleDecrement}>decrement (-)</button>
                 <span>{this.state.count}</span>
                 <button onClick={this.handleIncrement}>increment (+)</button>
                 <br />
                 <button onClick={this.resetCounter}>reset to (0)</button>
-              </div>
+              </React.Fragment>
             )
           }
         }
@@ -107,6 +103,7 @@
       )
     </script>
 
-    <script src="src/scriptName.js"></script>
-  </body>
+  <script src="src/scriptName.js"></script>
+</body>
+
 </html>
